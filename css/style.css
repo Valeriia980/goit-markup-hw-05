@@ -244,12 +244,13 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 .button-on:focus,
 .button-on:hover {
   color: var(--main-text-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 h2,
 h3 {
@@ -458,6 +459,9 @@ h3 {
   height: 44px;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -466,9 +470,6 @@ h3 {
   fill: var(--main-text-color);
   background-color: var(--button-link-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: 250ms;
-  transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link {
@@ -532,13 +533,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-link:hover .clients-list-link-svg,
 .clients-list-link:focus .clients-list-link-svg {
   fill: var(--button-link-color);
-  transition: 250ms;
-  transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*footer*/
@@ -608,6 +609,9 @@ footer .logotyp span {
   height: 100%;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-item:not(:last-child) {
   margin-right: 10px;
@@ -629,8 +633,6 @@ footer .logotyp span {
 .footer-list-item.facebook:focus,
 .footer-list-item.linkedin:focus {
   background-color: var(--button-link-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .join {
   margin-top: 0;
@@ -698,15 +700,16 @@ footer .container {
   color: var(--title-text-color);
   background-color: var(--section-bgc);
   padding: 6px 22px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
 }
 
-button:focus,
-button:hover {
+.filtre-button:focus,
+.filtre-button:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   color: var(--main-text-color);
   background-color: #2196f3;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-link {
