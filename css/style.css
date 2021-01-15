@@ -461,7 +461,7 @@ h3 {
   align-items: center;
   justify-content: center;
   transition: 250ms;
-  transition-property: fill, background-color, filter;
+  transition-property: fill, background-color, filter, border-radius;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -487,22 +487,15 @@ h3 {
   width: 206px;
 }
 
-/* Постоянные клиенты */
+/* Постоянные клиенты 
+
+*/
+
 .section .container {
   padding-bottom: 94px;
   padding-top: 94px;
 }
 
-.clients-list-item {
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  width: 170px;
-  height: 90px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .clients-list {
   display: flex;
   padding-left: 0;
@@ -518,29 +511,30 @@ h3 {
 
   letter-spacing: 0.03em;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
-  cursor: pointer;
-  border-color: var(--button-link-color);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-list-link-svg {
-  fill: #afb1b8;
-}
+
 .clients-list-link {
   width: 170px;
   height: 90px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  transition: 250ms;
+  align-items: center;
+  color: #afb1b8;
+  fill: currentColor;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
   transition-property: fill, border-color, filter;
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-link:hover .clients-list-link-svg,
 .clients-list-link:focus .clients-list-link-svg {
   fill: var(--button-link-color);
+  border-color: var(--button-link-color);
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--button-link-color);
 }
 
 /*footer*/
